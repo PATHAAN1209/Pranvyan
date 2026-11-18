@@ -20,8 +20,8 @@
 const translations = {
     en: {
         // Top Accessibility Bar
-        "gov_authority": "Pranvyan Emergency Response & Ambulance Priority System",
-        "gov_india": "Pranvyan Network",
+        "gov_authority": "Government of National Health Authority | Official Emergency Portal",
+        "gov_india": "Government of India",
         "skip_content": "Skip to Main Content",
         "screen_reader": "Screen Reader Access",
         "text_size": "Text Size",
@@ -29,11 +29,11 @@ const translations = {
         "theme_dark": "Dark Mode",
         "lang_switch_label": "हिंदी",
         "lang_current": "English",
-        
+
         // Brand & Header
-        "portal_name": "Pranvyan",
+        "portal_name": "AmbuPriority",
         "portal_subtitle": "National Ambulance Priority Routing & Dispatch System",
-        "ministry_name": "Emergency Health & Transit Network",
+        "ministry_name": "Ministry of Health and Family Welfare",
         "nav_home": "Home",
         "nav_features": "System Features",
         "nav_emergency": "Emergency Help",
@@ -43,7 +43,7 @@ const translations = {
 
         // Ticker
         "ticker_latest": "LATEST DISPATCH UPDATE",
-        "ticker_news": "Pranvyan green-corridor priority integrated across 48 major metropolitan hospitals. | Real-time traffic signal preemption operational at 120 key junctions. | Multilingual emergency hotline 102 & 108 operating 24x7 nationwide.",
+        "ticker_news": "AmbuPriority green-corridor priority integrated across 48 major metropolitan hospitals. | Real-time traffic signal preemption operational at 120 key junctions. | Multilingual emergency hotline 102 & 108 operating 24x7 nationwide.",
 
         // Hero Section
         "hero_tag": "NATIONAL HEALTH EMERGENCY CORRIDOR",
@@ -79,8 +79,8 @@ const translations = {
         "gallery_next": "Next Photo",
 
         // Footer
-        "footer_title": "Pranvyan National Portal",
-        "footer_dept": "Pranvyan Emergency Response Network",
+        "footer_title": "AmbuPriority National Portal",
+        "footer_dept": "National Health Authority • Ministry of Health and Family Welfare, Government of India",
         "footer_disclaimer": "Official Central Citizen Emergency Health Corridor System. All ambulances are monitored under Real-Time Priority Routing Protocol (AIS-125 Compliant).",
         "footer_links_home": "Home",
         "footer_links_docs": "Documentation",
@@ -88,7 +88,7 @@ const translations = {
         "footer_links_terms": "Terms of Service",
         "footer_links_guidelines": "GIGW Compliance",
         "footer_links_contact": "Contact Directorate",
-        "footer_copyright": "© 2026 Pranvyan Emergency Network. All Rights Reserved. Emergency Helpline: 102 / 108 / 112",
+        "footer_copyright": "© 2026 National Health Authority, Government of India. All Rights Reserved. Emergency Helpline: 102 / 108 / 112",
         "footer_last_updated": "Last Reviewed & Updated: 07 Nov 2026",
 
         // Register Page Specific
@@ -350,7 +350,7 @@ const translations = {
         "tox_drug_lbl": "Substance Overdose / Medication Misuse?",
 
         // Registration Portal Sidebar & Navbar (NIC/GOV layout)
-        "gov_authority_hindi": "प्राणव्यान",
+        "gov_authority_hindi": "भारत सरकार",
         "nav_about_system": "About System",
         "nav_emergency_services": "Emergency Services",
         "nav_hospital_network": "Hospital Network",
@@ -490,8 +490,8 @@ const translations = {
     },
     hi: {
         // Top Accessibility Bar
-        "gov_authority": "प्राणव्यान आपातकालीन प्रतिक्रिया एवं एम्बुलेंस प्रणाली",
-        "gov_india": "प्राणव्यान नेटवर्क",
+        "gov_authority": "राष्ट्रीय स्वास्थ्य प्राधिकरण सरकार | आधिकारिक आपातकालीन पोर्टल",
+        "gov_india": "भारत सरकार",
         "skip_content": "मुख्य सामग्री पर जाएं",
         "screen_reader": "स्क्रीन रीडर एक्सेस",
         "text_size": "टेक्स्ट आकार",
@@ -499,11 +499,11 @@ const translations = {
         "theme_dark": "डार्क मोड",
         "lang_switch_label": "English",
         "lang_current": "हिंदी (Hindi)",
-        
+
         // Brand & Header
-        "portal_name": "प्राणव्यान",
+        "portal_name": "एम्बुप्राथमिकता",
         "portal_subtitle": "राष्ट्रीय एम्बुलेंस प्राथमिकता रूटिंग एवं प्रेषण प्रणाली",
-        "ministry_name": "आपातकालीन स्वास्थ्य एवं पारगमन नेटवर्क",
+        "ministry_name": "स्वास्थ्य एवं परिवार कल्याण मंत्रालय",
         "nav_home": "होम",
         "nav_features": "प्रणाली विशेषताएं",
         "nav_emergency": "आपातकालीन सहायता",
@@ -513,7 +513,7 @@ const translations = {
 
         // Ticker
         "ticker_latest": "ताज़ा प्रेषण सूचना",
-        "ticker_news": "प्राणव्यान ग्रीन-कॉरिडोर देश के 48 बड़े महानगर अस्पतालों से एकीकृत। | 120 प्रमुख चौराहों पर रीयल-टाइम ट्रैफिक सिग्नल प्राथमिकता चालू। | चौबीसों घंटे बहुभाषी आपातकालीन हेल्पलाइन 102 एवं 108 सक्रिय।",
+        "ticker_news": "एम्बुप्राथमिकता ग्रीन-कॉरिडोर देश के 48 बड़े महानगर अस्पतालों से एकीकृत। | 120 प्रमुख चौराहों पर रीयल-टाइम ट्रैफिक सिग्नल प्राथमिकता चालू। | चौबीसों घंटे बहुभाषी आपातकालीन हेल्पलाइन 102 एवं 108 सक्रिय।",
 
         // Hero Section
         "hero_tag": "राष्ट्रीय स्वास्थ्य आपातकालीन गलियारा",
@@ -549,8 +549,8 @@ const translations = {
         "gallery_next": "अगली तस्वीर",
 
         // Footer
-        "footer_title": "प्राणव्यान राष्ट्रीय पोर्टल",
-        "footer_dept": "प्राणव्यान आपातकालीन प्रतिक्रिया नेटवर्क",
+        "footer_title": "एम्बुप्राथमिकता राष्ट्रीय पोर्टल",
+        "footer_dept": "राष्ट्रीय स्वास्थ्य प्राधिकरण • स्वास्थ्य एवं परिवार कल्याण मंत्रालय, भारत सरकार",
         "footer_disclaimer": "आधिकारिक केंद्रीय नागरिक आपातकालीन स्वास्थ्य कॉरिडोर प्रणाली। सभी एम्बुलेंस रीयल-टाइम प्राथमिकता रूटिंग प्रोटोकॉल (AIS-125 अनुपालन) के तहत ट्रैक की जाती हैं।",
         "footer_links_home": "होम",
         "footer_links_docs": "दस्तावेज़",
@@ -558,7 +558,7 @@ const translations = {
         "footer_links_terms": "सेवा की शर्तें",
         "footer_links_guidelines": "जीआईजीडब्ल्यू अनुपालन",
         "footer_links_contact": "निदेशालय संपर्क",
-        "footer_copyright": "© 2026 राष्ट्रीय स्वास्थ्य प्राधिकरण, प्राणव्यान। सर्वाधिकार सुरक्षित। आपातकालीन हेल्पलाइन: 102 / 108 / 112",
+        "footer_copyright": "© 2026 राष्ट्रीय स्वास्थ्य प्राधिकरण, भारत सरकार। सर्वाधिकार सुरक्षित। आपातकालीन हेल्पलाइन: 102 / 108 / 112",
         "footer_last_updated": "अंतिम समीक्षा एवं अद्यतन: 07 नवम्बर 2026",
 
         // Register Page Specific
@@ -820,7 +820,7 @@ const translations = {
         "tox_drug_lbl": "\u0926\u0935\u093e\u0907\u092f\u094b\u0902 \u0915\u093e \u0905\u0924\u094d\u092f\u0927\u093f\u0915 \u0938\u0947\u0935\u0928 / \u0913\u0935\u0930\u0921\u094b\u091c?",
 
         // Registration Portal Sidebar & Navbar (NIC/GOV layout)
-        "gov_authority_hindi": "प्राणव्यान",
+        "gov_authority_hindi": "भारत सरकार",
         "nav_about_system": "सिस्टम के बारे में",
         "nav_emergency_services": "आपातकालीन सेवाएं",
         "nav_hospital_network": "अस्पताल नेटवर्क",
@@ -1061,4 +1061,137 @@ function adjustPortalZoom(dir) {
     else if (dir === -1 && portalZoomLevel > 0.9) portalZoomLevel -= 0.05;
     document.body.style.zoom = portalZoomLevel;
 }
+
+// ============================================================================
+// CITIZEN PROFILE COMPONENT (ACROSS ALL PAGES: GIGW 3.0 STANDARD)
+// ============================================================================
+(function initGlobalCitizenProfile() {
+    function injectProfileBadge() {
+        const citizenDataRaw = sessionStorage.getItem('citizenSessionRecord');
+        if (!citizenDataRaw) return;
+
+        let citizenData = null;
+        try { citizenData = JSON.parse(citizenDataRaw); } catch (e) { return; }
+        if (!citizenData || !citizenData.fullName) return;
+
+        // Find existing container or topbar right / header right
+        let existingPill = document.getElementById('citizenProfilePill');
+        if (existingPill) {
+            updatePillData(citizenData);
+            existingPill.classList.remove('hidden');
+            return;
+        }
+
+        // Look for best mount target across pages
+        const targetContainer = document.querySelector('header .flex.items-center.gap-3') ||
+                                document.querySelector('header .flex.items-center.gap-2.5') ||
+                                document.querySelector('header .flex.items-center.gap-4') ||
+                                document.querySelector('header .flex.items-center:last-child');
+
+        if (!targetContainer) return;
+
+        const pillHtml = `
+            <div id="citizenProfilePill" class="relative mr-2 font-sans">
+                <button type="button" onclick="toggleCitizenDropdown()"
+                    class="flex items-center gap-2 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 border border-slate-300 dark:border-slate-600 px-2 py-1 sm:px-2.5 sm:py-1.5 rounded text-left transition cursor-pointer">
+                    <div class="w-6 h-6 rounded-full bg-[#0f2a4a] text-white flex items-center justify-center font-bold text-[10px] shadow-sm">
+                        <span id="profileInitial">${(citizenData.fullName || 'U').charAt(0).toUpperCase()}</span>
+                    </div>
+                    <div class="hidden sm:block leading-tight pr-1">
+                        <div class="flex items-center gap-1">
+                            <span id="profileName" class="text-xs font-bold text-slate-800 dark:text-slate-100 max-w-[105px] truncate">${citizenData.fullName}</span>
+                            <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500" title="Active Verified Session"></span>
+                        </div>
+                        <span id="profileIdShort" class="text-[10px] text-slate-500 dark:text-slate-400 font-mono">${citizenData.idType || 'ID'} ${citizenData.maskedId || 'Verified'}</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-down text-[9px] text-slate-400 ml-0.5"></i>
+                </button>
+
+                <!-- Official Dropdown Card -->
+                <div id="citizenProfileDropdown" class="hidden absolute right-0 mt-1.5 w-64 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded shadow-xl z-50 text-xs overflow-hidden">
+                    <div class="bg-slate-50 dark:bg-slate-800 px-3 py-2 border-b border-slate-200 dark:border-slate-700">
+                        <div class="text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">Citizen Session Record</div>
+                        <div id="dropdownFullName" class="font-bold text-slate-800 dark:text-slate-100 text-sm mt-0.5 truncate">${citizenData.fullName}</div>
+                        <div class="flex items-center gap-1.5 mt-1">
+                            <span class="px-1.5 py-0.5 bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 rounded text-[9px] font-semibold border border-emerald-300 dark:border-emerald-700">
+                                <i class="fa-solid fa-circle-check text-[8px] mr-0.5"></i> Session Active
+                            </span>
+                            <span class="text-[10px] text-slate-400">GIGW Tier-1</span>
+                        </div>
+                    </div>
+
+                    <div class="p-3 space-y-2 text-[11px] text-slate-600 dark:text-slate-300">
+                        <div class="flex justify-between items-center py-1 border-b border-slate-100 dark:border-slate-800">
+                            <span class="text-slate-400">Document Type:</span>
+                            <span id="dropdownIdType" class="font-medium text-slate-700 dark:text-slate-200">${citizenData.idType}</span>
+                        </div>
+                        <div class="flex justify-between items-center py-1 border-b border-slate-100 dark:border-slate-800">
+                            <span class="text-slate-400">ID Reference:</span>
+                            <span id="dropdownIdNum" class="font-mono font-medium text-slate-700 dark:text-slate-200">${citizenData.maskedId}</span>
+                        </div>
+                        <div class="flex justify-between items-center py-1">
+                            <span class="text-slate-400">Emergency Phone:</span>
+                            <span id="dropdownPhone" class="font-medium text-slate-700 dark:text-slate-200">${citizenData.maskedPhone}</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 dark:bg-slate-800/60 p-2 border-t border-slate-200 dark:border-slate-700">
+                        <button type="button" onclick="lockCitizenSessionGlobal()"
+                            class="w-full py-1.5 px-2 bg-slate-200 hover:bg-red-50 text-slate-700 hover:text-red-700 dark:bg-slate-700 dark:hover:bg-red-900/40 dark:text-slate-200 rounded text-[11px] font-semibold transition flex items-center justify-center gap-1.5 cursor-pointer">
+                            <i class="fa-solid fa-lock text-[10px]"></i>
+                            <span>Lock / Reset Verification</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        targetContainer.insertAdjacentHTML('afterbegin', pillHtml);
+    }
+
+    function updatePillData(data) {
+        const pInitial = document.getElementById('profileInitial');
+        const pName = document.getElementById('profileName');
+        const pIdShort = document.getElementById('profileIdShort');
+        const dFullName = document.getElementById('dropdownFullName');
+        const dIdType = document.getElementById('dropdownIdType');
+        const dIdNum = document.getElementById('dropdownIdNum');
+        const dPhone = document.getElementById('dropdownPhone');
+
+        if (pInitial) pInitial.textContent = (data.fullName || 'U').charAt(0).toUpperCase();
+        if (pName) pName.textContent = data.fullName;
+        if (pIdShort) pIdShort.textContent = (data.idType || 'ID') + ' ' + (data.maskedId || '');
+        if (dFullName) dFullName.textContent = data.fullName;
+        if (dIdType) dIdType.textContent = data.idType;
+        if (dIdNum) dIdNum.textContent = data.maskedId;
+        if (dPhone) dPhone.textContent = data.maskedPhone;
+    }
+
+    window.toggleCitizenDropdown = function() {
+        const dropdown = document.getElementById('citizenProfileDropdown');
+        if (dropdown) dropdown.classList.toggle('hidden');
+    };
+
+    window.lockCitizenSessionGlobal = function() {
+        sessionStorage.removeItem('citizenSessionRecord');
+        const pill = document.getElementById('citizenProfilePill');
+        if (pill) pill.classList.add('hidden');
+        window.location.href = 'index.html';
+    };
+
+    document.addEventListener('click', (e) => {
+        const pill = document.getElementById('citizenProfilePill');
+        const dropdown = document.getElementById('citizenProfileDropdown');
+        if (pill && dropdown && !pill.contains(e.target)) {
+            dropdown.classList.add('hidden');
+        }
+    });
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', injectProfileBadge);
+    } else {
+        injectProfileBadge();
+    }
+})();
+
 
