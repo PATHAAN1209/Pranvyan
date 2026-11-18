@@ -534,6 +534,37 @@
 
     <!-- State 2: Main Allocated Full-Screen Live Tracking Viewport -->
     <main id="allocatedSection" class="hidden full-map-viewport">
+        <!-- TOP EMERGENCY DISPATCH NOTIFICATION: GOVT OFFICIAL GIGW BANNER -->
+        <div id="liveLocationNoticeToast" class="fixed top-3 left-1/2 -translate-x-1/2 z-[10000] w-full max-w-lg px-3 transition-all duration-300 ease-out font-sans">
+            <div class="bg-white border-2 border-[#003366] rounded shadow-xl overflow-hidden text-slate-800">
+                <!-- Tricolor Strip -->
+                <div class="h-1 bg-gradient-to-r from-orange-500 via-white to-green-600"></div>
+                
+                <div class="p-3">
+                    <div class="flex items-start justify-between gap-2">
+                        <div class="flex items-center gap-2">
+                            <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-100 text-amber-900 border border-amber-300">
+                                <span class="w-1.5 h-1.5 rounded-full bg-red-600 animate-ping mr-1"></span> STAT DISPATCH
+                            </span>
+                            <span class="text-[11px] font-bold text-[#003366] uppercase tracking-wide">Emergency Telemetry Shared</span>
+                        </div>
+                        <button type="button" onclick="dismissLiveNoticeToast()" class="text-slate-400 hover:text-slate-700 transition text-sm cursor-pointer px-1">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+
+                    <p class="text-xs text-slate-700 font-medium leading-relaxed mt-1.5">
+                        Your real-time GPS coordinates are currently shared with the assigned emergency ambulance unit. <strong>Kindly share the 4-digit OTP with the driver upon vehicle arrival</strong> to terminate live tracking and confirm patient onboarding.
+                    </p>
+
+                    <div class="mt-2 pt-2 border-t border-slate-100 flex items-center justify-between text-[10px] text-slate-500">
+                        <span><i class="fa-solid fa-shield-halved text-emerald-600 mr-1"></i> Data Protection Clause • GIGW Standard</span>
+                        <span class="font-medium text-amber-800 bg-amber-50 px-1.5 py-0.5 rounded">ओटीपी साझा करने पर ट्रैकिंग समाप्त होगी</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- 1. FULL-SCREEN GOOGLE MAP (Real Indian Road Map) -->
         <div id="liveAmbulanceMap"></div>
 
@@ -635,19 +666,32 @@
                     </div>
 
                     <!-- OTP VERIFICATION -->
-                    <div class="p-2.5 rounded-lg bg-amber-50 border border-amber-300 flex items-center justify-between gap-2">
-                        <div>
-                            <span class="text-[9px] uppercase font-bold text-amber-800 tracking-wider block">OTP (For Safety)</span>
-                            <div class="font-mono text-lg font-black text-slate-900 tracking-widest leading-none mt-1" id="panelOtpDisplay">8978</div>
+                    <div class="p-2.5 rounded-lg bg-amber-50 border border-amber-300 space-y-2">
+                        <div class="flex items-center justify-between gap-2">
+                            <div>
+                                <span class="text-[9px] uppercase font-bold text-amber-800 tracking-wider block">OTP (For Safety &amp; Live Tracking Control)</span>
+                                <div class="font-mono text-lg font-black text-slate-900 tracking-widest leading-none mt-1" id="panelOtpDisplay">8978</div>
+                            </div>
+                            <div class="flex items-center gap-1.5">
+                                <button type="button" id="btnCopyOtp" class="px-2.5 py-1.5 bg-amber-400 hover:bg-amber-300 text-slate-900 rounded font-bold text-[10px] flex items-center gap-1 transition shadow">
+                                    <i class="fa-regular fa-copy"></i>
+                                    <span id="btnCopyOtpText">Copy</span>
+                                </button>
+                                <span id="panelOtpVerifiedBadge" class="hidden text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2 py-1 rounded border border-emerald-300">
+                                    <i class="fa-solid fa-check"></i> Verified
+                                </span>
+                            </div>
                         </div>
-                        <div class="flex items-center gap-1.5">
-                            <button type="button" id="btnCopyOtp" class="px-2.5 py-1.5 bg-amber-400 hover:bg-amber-300 text-slate-900 rounded font-bold text-[10px] flex items-center gap-1 transition shadow">
-                                <i class="fa-regular fa-copy"></i>
-                                <span id="btnCopyOtpText">Copy</span>
-                            </button>
-                            <span id="panelOtpVerifiedBadge" class="hidden text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2 py-1 rounded border border-emerald-300">
-                                <i class="fa-solid fa-check"></i> Verified
-                            </span>
+
+                        <!-- LIVE TRACKING / OTP NOTICE -->
+                        <div class="p-2 rounded bg-amber-100/80 border border-amber-300/80 text-[10px] text-amber-950 flex items-start gap-1.5 leading-snug">
+                            <i class="fa-solid fa-location-crosshairs text-amber-700 mt-0.5 text-xs flex-shrink-0"></i>
+                            <div>
+                                <span class="font-bold">Privacy Notice:</span> Kindly share this OTP with the ambulance driver upon arrival in order to stop and terminate your active live tracking.
+                                <div class="text-[9px] text-amber-800 font-medium mt-0.5">
+                                    (ड्राइवर को ओटीपी साझा करने तक आपकी लोकेशन आपातकालीन नेविगेशन हेतु सक्रिय रहेगी।)
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1092,7 +1136,28 @@
             initEmergencyAlertButton(ctx, bookingRef, driver);
             initMapControls();
 
+            // Trigger Live GPS sharing alert banner with sound/haptic hint
+            showLiveLocationNoticeToast();
+
             window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function showLiveLocationNoticeToast() {
+            const toast = document.getElementById('liveLocationNoticeToast');
+            if (toast) {
+                toast.classList.remove('hidden');
+                toast.style.transform = 'translate(-50%, 0)';
+                toast.style.opacity = '1';
+            }
+        }
+
+        function dismissLiveNoticeToast() {
+            const toast = document.getElementById('liveLocationNoticeToast');
+            if (toast) {
+                toast.style.transform = 'translate(-50%, -20px)';
+                toast.style.opacity = '0';
+                setTimeout(() => toast.classList.add('hidden'), 400);
+            }
         }
 
         // ---------------------------------------------------------------------------
